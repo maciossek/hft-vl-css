@@ -1,0 +1,208 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>HFT IPR #2 CSS</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/custom.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/atom-one-dark.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+		<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+	</head>
+	<!-- https://media.giphy.com/media/At9KxVFySzjRm/giphy.gif http://thecodinglove.com/ -->
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background-size="cover" data-background-image="https://media.giphy.com/media/13XW2MJE0XCoM0/giphy.gif">
+					<h1 class="title">IPR</h1>
+					<h3 class="title">CSS</h3>
+				</section>
+				<section>
+					<section>
+						<h2>CSS1 (Dec. 1996)</h2>
+						<ul>
+							<li>Schriftarten und „Betonung setzen“</li>
+							<li>Farben für Schrift, Hintergrund und Elemente</li>
+							<li>Text-Attribute (wie Wortabstand, Zeichengrößen und Textlinien)</li>
+							<li>Alignment von Text, Bildern, Tabellen und anderen Elementen</li>
+							<li>Randabstand, Ränder, Einrückung und Positionierung</li>
+							<li>Eindeutige Identifikation von Gruppen von Attributen</li>
+						</ul>
+					</section>
+					<section>
+						<h2>CSS2 (May 1998)</h2>
+						<ul>
+							<li>Aufbauend auf CSS1</li>
+							<li>Erweiterungen um absolute und relative, sowie feste Positionen</li>
+							<li>Z-Index (Tiefeninformation)</li>
+							<li>„Aural Style Sheets“ für Sprachsynthese <a href="https://goo.gl/qqi2jg" target="_blank">CSS Aural Reference</a></li>
+						</ul>
+					</section>
+					<section>
+						<h2>CSS2.1 (Feb. 2004, dann zurückgezogen, Final Jun. 2011)</h2>
+						<ul>
+							<li>Ausmerzen von Fehlern in CSS2, mit „Rückwärtskompatibilität“</li>
+						</ul>
+					</section>
+					<section>
+						<h2>CSS3 (Releases seit Juni 2011 bis Juni 2012)</h2>
+						<ul>
+							<li>Standardunterstützung nun basierend auf Levels, hier Level3</li>
+							<li>Wieder aufbauend auf CSS2 -- nun aber modulare Einzeldokumente:</li>
+								<ul>
+									<li>Juni 2011:	CSS Color Module Level 3</li>
+									<li>Sept. 2011:	Selectors Level 3</li>
+									<li>Sept. 2011:	CSS Namespace Module</li>
+									<li>Jun. 2012:	Media Queries</li>
+								</ul>
+						</ul>
+					</section>
+					<section>
+						<h2>„CSS4“ (Ongoing)</h2>
+						<ul>
+							<li>Level 4 ist im Aufbau begriffen -- „There will never be a CSS4.“</li>
+							<li>Weitere Module (hier die finalisierten):</li>
+								<ul>
+									<li>Apr. 2012:	Requirements for Japanese Text Layout</li>
+									<li>Sept. 2012:	W3C Working Draft „Image Values“</li>
+									<li>Mar. 2013:	CSS Print Profile</li>
+									<li>Oct. 2013:	Selectors API Level 2</li>
+								</ul>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+					<h2>Warum gibt es CSS?</h2>
+						<ul>
+							<li class="fragment fade-up">Trennung von Layout und Inhalt</li>
+							<li class="fragment fade-up">Wiederverwendbarkeit</li>
+							<li class="fragment fade-up">Verbesserte Anpassungen möglich</li>
+							<li class="fragment fade-up">Bandbreite</li>
+						</ul>
+						<aside class="notes">
+							Bezüglich Bandbreite: Einmal übertragene Daten / Stildefinitionen für referenzierte CLASS werden nur einmal übertragen.
+						</aside>
+					</section>
+					<section>
+						<h2>HTML ist <span class="fragment highlight-red" data-fragment-index="5">EINZIG UND ALLEIN</span> für die Struktur einer Webseite gedacht</h2>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Aufbau CSS Syntax</h2>
+						<pre style="box-shadow: none">
+							<code data-trim>
+								selector {
+									property: value;
+								}
+							</code>
+						</pre>
+					</section>
+					<section>
+						<h2>CSS Beispiel</h2>
+						<p data-height="550" data-theme-id="light" data-slug-hash="RoBYBR" data-default-tab="html,result" data-user="stephanie08" data-embed-version="2" data-pen-title="CSS Zen Garden" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/stephanie08/pen/RoBYBR/">CSS Zen Garden</a> by Jade Stephanie Lumarque (<a href="https://codepen.io/stephanie08">@stephanie08</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+					</section>
+
+					<section>
+						<h2>Einbindung von CSS in HTML</h2>
+						<p data-height="500" data-theme-id="light" data-slug-hash="pwYmwO" data-default-tab="html,result" data-user="maciossek" data-embed-version="2" data-pen-title="pwYmwO" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/maciossek/pen/pwYmwO/">pwYmwO</a> by Mathias Maciossek (<a href="https://codepen.io/maciossek">@maciossek</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+					</section>
+
+					<section>
+						<h2>CSS Selektoren</h2>
+						<p data-height="500" data-theme-id="light" data-slug-hash="zzbQpV" data-default-tab="html,result" data-user="maciossek" data-embed-version="2" data-pen-title="zzbQpV" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/maciossek/pen/zzbQpV/">zzbQpV</a> by Mathias Maciossek (<a href="https://codepen.io/maciossek">@maciossek</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+					</section>
+
+					<section>
+						<h2>CSS Farbwerte</h2>
+						<p data-height="500" data-theme-id="light" data-slug-hash="weObxm" data-default-tab="html,result" data-user="maciossek" data-embed-version="2" data-pen-title="weObxm" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/maciossek/pen/weObxm/">weObxm</a> by Mathias Maciossek (<a href="https://codepen.io/maciossek">@maciossek</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+					</section>
+
+					<section>
+						<h2>CSS Schriftarten</h2>
+						<p data-height="500" data-theme-id="light" data-slug-hash="RgdmMp" data-default-tab="html,result" data-user="maciossek" data-embed-version="2" data-pen-title="RgdmMp" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/maciossek/pen/RgdmMp/">RgdmMp</a> by Mathias Maciossek (<a href="https://codepen.io/maciossek">@maciossek</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+						<aside class="notes">
+							serif, sans-serif, monospace
+						</aside>
+					</section>
+
+					<section>
+						<h2>CSS Tabelle + Selektoren</h2>
+						<p data-height="500" data-theme-id="light" data-slug-hash="eRXaxq" data-default-tab="html,result" data-user="maciossek" data-embed-version="2" data-pen-title="eRXaxq" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/maciossek/pen/eRXaxq/">eRXaxq</a> by Mathias Maciossek (<a href="https://codepen.io/maciossek">@maciossek</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+					</section>
+
+					<section>
+						<h2>CSS Box Modell</h2>
+						<img height="200px" src="https://www.codeproject.com/KB/HTML/567385/boxmodel-image.png" />
+						<p data-height="265" data-theme-id="light" data-slug-hash="rwRgZE" data-default-tab="css,result" data-user="maciossek" data-embed-version="2" data-pen-title="rwRgZE" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/maciossek/pen/rwRgZE/">rwRgZE</a> by Mathias Maciossek (<a href="https://codepen.io/maciossek">@maciossek</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+					</section>
+
+					<section>
+						<h2>CSS Positionierung</h2>
+						<p data-height="500" data-theme-id="light" data-slug-hash="mwoZdp" data-default-tab="css,result" data-user="maciossek" data-embed-version="2" data-pen-title="mwoZdp" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/maciossek/pen/mwoZdp/">mwoZdp</a> by Mathias Maciossek (<a href="https://codepen.io/maciossek">@maciossek</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+					</section>
+
+					<section>
+						<h2>CSS Overflow</h2>
+						<p data-height="500" data-theme-id="light" data-slug-hash="KqELLJ" data-default-tab="css,result" data-user="maciossek" data-embed-version="2" data-pen-title="KqELLJ" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/maciossek/pen/KqELLJ/">KqELLJ</a> by Mathias Maciossek (<a href="https://codepen.io/maciossek">@maciossek</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+					</section>
+					<section>
+						<h2>CSS Flexbox</h2>
+						<p data-height="500" data-theme-id="light" data-slug-hash="yXwdBW" data-default-tab="css,result" data-user="maciossek" data-embed-version="2" data-pen-title="yXwdBW" class="codepen">See the Pen <a href="https://codepen.io/maciossek/pen/yXwdBW/">yXwdBW</a> by Mathias Maciossek (<a href="https://codepen.io/maciossek">@maciossek</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Übung</h2>
+						<ul>
+							<li>Tutorial CSS <a target="_blank" href="https://www.w3schools.com/css/exercise.asp">https://www.w3schools.com/css/exercise.asp</a></li>
+							<li>Tutorial Flexbox <a target="_blank" href="http://flexboxfroggy.com/">http://flexboxfroggy.com/</a></li>
+							<li>Nehmen Sie Ihre Webseite aus HTML und kopieren Sie diese in ein neues Verzeichnis CSS: ~/public_html/CSS/</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Bauen sie die folgenden Dinge ein bzw. um:</h2>
+						<ul>
+							<li>Positionieren sie Ihre Webseite und deren Inhalte mit Hilfe von Flexbox</li>
+							<li>Verwenden sie eine Google Webfont</li>
+							<li>Werwenden sie für ihre Links einen hover Effekt</li>
+							<li>Formatieren sie ihre Tabelle ordentlich</li>
+						</ul>
+					</section>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			Reveal.initialize({
+				backgroundTransition: 'slide',
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
+transition
